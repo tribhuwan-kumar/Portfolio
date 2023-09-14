@@ -15,8 +15,8 @@ html, body{
 }
 
 .header{
-    padding-bottom: 2000px;
-    /* padding-bottom: auto; */
+    padding-bottom: 1660px;
+    
 
 }
 
@@ -29,12 +29,12 @@ html, body{
     z-index: 100;
 }
 
-
+/* Main heading text */
 
 #background1 > h1{
     color: #f0f8ff;
     font-family: 'Kaushan Script', cursive;
-    display: block;
+    display: flex;
     justify-content: center;
     padding-top: 165px;
     text-align: center;
@@ -44,13 +44,16 @@ html, body{
 
     
 }
+/* Main heading text END */
+
+
+
+/* Left side heading text */
 
 #left-heading{
     color: #f0f8ff;
     font-family: 'Kaushan Script', cursive;
-    display: block;
-    justify-content: center;
-    padding-top: 23px;
+    padding-top: 15px;
     padding-left: 50px;
     text-align: left;
     font-size: 2.5rem;
@@ -59,42 +62,45 @@ html, body{
     text-shadow: 2px 2px 4px rgba(106, 106, 106, 0.3);
     text-decoration: none;
     display: inline-block;
+    position: sticky;
+    top: 0;
+
 }
 
 #left-heading:hover{
     color: #333;
     transition: color .8s;
-    /* font-weight: bold; */
-    color: #333;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     transform: perspective(300px);
+
+}
+/* Left side heading text END */
+
+
+#bottom-topics li{
+    text-decoration: none;
+    display: flex;
+    float: left;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    padding-left: 215px;
+    margin-left: 275px;
+    
 }
 
+/*bottom topics under main header*/
 
-#background1 li a{
+#bottom-topics li a{
     color: rgb(255, 255, 255);
     text-decoration: none;
     list-style-type: disc;
     padding-left: 40px;
-    word-spacing: 5px;
+    letter-spacing: 1px;
     font-size: 24px;
     font-family: 'Dancing Script', cursive;
     font-weight: 700;
 }
-
-#background1 li{
-    text-decoration: none;
-    display: flex;
-    float: left;
-    /* word-spacing: 10px; */
-    justify-content: center;
-    align-items: center;
-    padding-top: 10px;
-    padding-left: 200px;
-    margin-left: 290px
-    
-}
-
 
 #bottom-topics li a:hover{
     text-decoration: none;
@@ -102,16 +108,28 @@ html, body{
     color: #333;
     transition: color 0.8s;
 }
+/*bottom topics under main header END */
 
-#navbar{
-    display: inline;
-    float: right;
+#nav_container{
+    display: block;
     overflow: hidden;
     position: sticky;
-    /* top: 0; */
+    top: 0;
+    background: rgba(217, 134, 134, 0.552);
+    height: 80px;
+    width: auto;
+
+}
+
+#navbar{
+    display: block;
+    float: right;
+    position: sticky;
+    top: 0;
     z-index: 100;
-    padding-top: 25px;
+    padding-top: 15px;
     padding-right: 50px;
+
     
 
 }
@@ -126,13 +144,12 @@ html, body{
     font-family: 'Dancing Script', cursive;
     font-size: 1.6rem;
     font-weight: bold; 
-    letter-spacing: .5px;
+    letter-spacing: 1px;
     text-shadow: 2px 2px 4px rgba(106, 106, 106, 0.3);
 
 }
 
 #navbar a:hover {
-    /* color: #333; */
     transition: color .8s;
     font-weight: bold;
     color: #333;
@@ -141,11 +158,15 @@ html, body{
   }
 
 
-/* #navbar a.active{
+
+/* #navbar a:active{
     color: #333;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     transform: perspective(300px);
 } */
+
+
+/* about me context*/
 
 #things_i_love > h2{
     color: #f0f8ff;
@@ -153,22 +174,18 @@ html, body{
     display: block;
     justify-content: center;
     padding-top: 350px;
-    /* padding-left: 50px; */
     text-align: center;
     font-size: 2.8rem;
     word-spacing: 2px;
     letter-spacing: .5px;
     text-shadow: 2px 2px 4px rgba(106, 106, 106, 0.3);
     text-decoration: none;
-    /* display: inline-block; */
 
 }
 
 #frontend_logo{
     color: #333;
     font-size: 3.0rem;
-    /* padding-top: 50px; */
-    /* padding-left: 50px; */
     text-align: center;
     align-items: center;
     word-spacing: 2px;
@@ -190,10 +207,8 @@ html, body{
     margin-top: 70px; 
     margin-left: 130px;
     padding: 20px;
-    /* padding-top: 28px; */
-    /* border: 1px solid #ccc; */
     border-radius: 16px;
-    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     background-color: #f8f8f8;
 
 
@@ -206,7 +221,6 @@ html, body{
     display: block;
     justify-content: center;
     padding-top: 10px;
-    /* padding-left: 50px; */
     text-align: center;
     font-size: 2.1rem;
     word-spacing: 2px;
@@ -231,7 +245,6 @@ html, body{
     max-width: 500px;
     max-height: fit-content;
     margin-top: 20px;
-    /* margin-left: -386px */
 }
 
 
@@ -243,15 +256,6 @@ html, body{
 }
 
 
-/* #background2{
-    background: scroll;
-    background: rgb(246, 168, 168);
-    height: 100vh;
-    width: 100vw;
-    z-index: 100;
-    margin-top: 750px;
-
-} */
 
 #content_me {
     text-align: center;
@@ -311,21 +315,335 @@ html, body{
     margin-right: 90px;
 }
 
-/* #bottom-topics li a::before{
-    content: "";
-    position: absolute;
-    bottom: -2px; 
-    left: 0;
-    width: 0;
-    height: 1px; 
-    background-color: #333; 
-    transition: width 0.8s ease;
-  
+/* about me context END*/
+
+
+
+/*find me on block */
+#find_me_on_block{
+    display: block;
 }
 
-#bottom-topics li a::before{
-    width: 180px;
+#find_me_on_block > h4{
+    color: #f0f8ff;
+    font-family: 'Kaushan Script', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    text-align: center;
+    font-size: 2.8rem;
+    position: relative;
+    text-shadow: 2px 2px 4px rgba(106, 106, 106, 0.3);
+    word-spacing: 2px;
+    letter-spacing: .5px;
+    text-decoration: none;
+}
+
+#find_me_on_block > p{
+    color: #f0f8ff;
+    font-family: 'Dancing Script', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -10px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    position: relative;
+    text-shadow: 2px 2px 4px rgba(106, 106, 106, 0.3);
+    text-decoration: none;
+}
+
+#find_me_icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    position: relative;
+    color: #333;
+    transition: color 0.8s;
+    margin-top: 24px;
+
+    
+}
+
+#social-icons a{
+    color: rgb(255, 255, 255);
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 28px;
+    background-color: #d38686;
+}
+
+#social-icons a:hover{
+    color: #333;
+    text-decoration: none;
+    transition: color .8s;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    transform: perspective(300px);
+    
+}
+
+/*find me on block END */
+
+
+
+/*footer block */
+#footer {
+    background-color: #df9595;
+    padding: 20px;
+    display: block;
+    height: 20px;
+    margin-top: 50px;
+  }
+
+#created_paragraph{
+    display: inline;
+    align-items: center;
+    justify-content: center;
+}
+
+#created_paragraph > p{
+    display: inline;
+    align-items: center;
+    justify-content: center;
+    font-family: 'cookie', cursive;
+    font-size: 1.6rem;
+    color: #f0f8ff;
+    word-spacing: .5px;
+    letter-spacing: 1px;
+}
+
+#copyright{
+    margin-top: 10px; 
+    text-align: center;
+    justify-self: center;
+    display: flex;
+    padding-left: 195px;
+}
+
+
+#footer-social-icons{
+    display: block;
+    float: right;
+    margin-right: 35px;
+}
+
+#footer-social-icons a{
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+
+#footer-social-icons a:hover{
+    color: #333;
+    text-decoration: none;
+    transition: color .8s;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    transform: perspective(300px);
+}
+
+
+
+@media screen and (max-width: 480px) {
+    /* Adjustments for mobile screens */
+/* *{
+    padding: 0px;
+    margin: 0px;
+    
 } */
+
+/* html, body{
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    background-color: rgb(246, 168, 168);
+        
+} */
+
+.header{
+    /* padding-bottom: 1660px; */
+    height: 100vh;
+    width: 100vw;
+
+}
+
+
+#background1{
+    background: scroll;
+    background: rgb(246, 168, 168);
+    height: 100vh;
+    width: 100vw;
+    z-index: 100;
+}
+
+#background1 > h1{
+    color: #f0f8ff;
+    font-family: 'Kaushan Script', cursive;
+    display: flex;
+    justify-content: center;
+    padding-top: 165px;
+    text-align: center;
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px rgba(106, 106, 106, 0.3);
+    z-index: 100;
+
+}
+
+#left-heading{
+    color: #f0f8ff;
+    font-family: 'Kaushan Script', cursive;
+    padding-top: 5px;
+    /* padding-left: 50px; */
+    /* text-align: left; */
+    font-size: 2.5rem;
+    word-spacing: 2px;
+    letter-spacing: .5px;
+    text-shadow: 2px 2px 4px rgba(106, 106, 106, 0.3);
+    text-decoration: none;
+    /* display: inline-block; */
+    /* position: sticky; */
+    /* top: 0; */
+    background-color: #333;
+
+}
+
+#left-heading:hover{
+    color: #333;
+    transition: color .8s;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    transform: perspective(300px);
+
+}
+
+#nav_container{
+    display: block;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    background: rgba(217, 134, 134, 0.552);
+    height: 10%;
+    width: auto;
+
+}
+
+#navbar{
+    display: block;
+    float: right;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding-top: 5px;
+    padding-right: 10px;
+
+    
+
+}
+
+#bottom-topics{
+    margin-left: -505px;
+}
+
+#bottom-topics li{
+    text-decoration: none;
+    display: flex;
+    /* float: left; */
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    /* padding-left: 215px; */
+    /* margin-left: 275px; */
+    
+}
+
+#bottom-topics li a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    list-style-type: disc;
+    /* padding-left: 40px; */
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+    font-family: 'Dancing Script', cursive;
+    font-weight: 700;
+}
+
+#bottom-topics li a:hover{
+    text-decoration: none;
+    position: relative;
+    color: #333;
+    transition: color 0.8s;
+}
+
+#things_i_love > h2{
+    color: #f0f8ff;
+    font-family: 'Kaushan Script', cursive;
+    display: block;
+    justify-content: center;
+    padding-top: 350px;
+    text-align: center;
+    font-size: 2.8rem;
+    word-spacing: 2px;
+    letter-spacing: .5px;
+    text-shadow: 2px 2px 4px rgba(106, 106, 106, 0.3);
+    text-decoration: none;
+
+}
+
+#frontend_logo{
+    color: #333;
+    font-size: 3.0rem;
+    text-align: center;
+    align-items: center;
+    word-spacing: 2px;
+    letter-spacing: .5px;
+    text-shadow: 2px 2px 4px rgba(106, 106, 106, 0.3);
+    text-decoration: none;
+    display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
