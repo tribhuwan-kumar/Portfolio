@@ -1,7 +1,7 @@
 *{
     padding: 0px;
     margin: 0px;
-
+   
 }
 
 html, body{
@@ -10,12 +10,12 @@ html, body{
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
-    background-color: rgb(246, 168, 168);
+    background-color: rgb(0, 0, 0);
     
 }
 
 .header{
-    padding-bottom: 1660px;
+    padding-bottom: 1765px;
     
 
 }
@@ -23,23 +23,22 @@ html, body{
 
 #background1{
     background: scroll;
-    background: rgb(246, 168, 168);
-    height: 200vh;
-    width: 200vw;
+    height: 100vh;
+    width: 100vw;
     z-index: 100;
 }
 
 /* Main heading text */
 
 #background1 > h1{
-    color: #f0f8ff;
+    color: #7541f8;
     font-family: 'Kaushan Script', cursive;
     display: flex;
     justify-content: center;
     padding-top: 165px;
     text-align: center;
     font-size: 4rem;
-    text-shadow: 2px 2px 4px rgba(106, 106, 106, 0.3);
+    text-shadow: 2px 2px 4px rgba(69, 24, 85, 0.219);
     z-index: 100;
 
     
@@ -51,7 +50,7 @@ html, body{
 /* Left side heading text */
 
 #left-heading{
-    color: #f0f8ff;
+    color: #ffffff;
     font-family: 'Kaushan Script', cursive;
     padding-top: 15px;
     padding-left: 50px;
@@ -68,13 +67,21 @@ html, body{
 }
 
 #left-heading:hover{
-    color: #333;
+    color: #7541f8;
     transition: color .8s;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     transform: perspective(300px);
 
 }
 /* Left side heading text END */
+
+/*bottom topics under main header*/
+
+#bottom-topics{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
 #bottom-topics li{
@@ -84,12 +91,10 @@ html, body{
     justify-content: center;
     align-items: center;
     padding-top: 10px;
-    padding-left: 215px;
-    margin-left: 275px;
+    
     
 }
 
-/*bottom topics under main header*/
 
 #bottom-topics li a{
     color: rgb(255, 255, 255);
@@ -105,8 +110,10 @@ html, body{
 #bottom-topics li a:hover{
     text-decoration: none;
     position: relative;
-    color: #333;
+    color: #7541f8;
     transition: color 0.8s;
+    text-shadow: 2px 2px 4px rgba(69, 24, 85, 0.219);
+
 }
 /*bottom topics under main header END */
 
@@ -115,9 +122,10 @@ html, body{
     overflow: hidden;
     position: sticky;
     top: 0;
-    background: rgba(217, 134, 134, 0.552);
+    background: rgba(8, 9, 31, 0.48);
     height: 80px;
     width: auto;
+    z-index: 100;
 
 }
 
@@ -152,18 +160,11 @@ html, body{
 #navbar a:hover {
     transition: color .8s;
     font-weight: bold;
-    color: #333;
+    color: #7541f8;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     transform: perspective(300px);
   }
 
-
-
-/* #navbar a:active{
-    color: #333;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-    transform: perspective(300px);
-} */
 
 
 /* about me context*/
@@ -184,15 +185,22 @@ html, body{
 }
 
 #frontend_logo{
-    color: #333;
+    color: #f0f8ff;
     font-size: 3.0rem;
     text-align: center;
     align-items: center;
+    justify-content: center;
     word-spacing: 2px;
     letter-spacing: .5px;
     text-shadow: 2px 2px 4px rgba(106, 106, 106, 0.3);
     text-decoration: none;
-    display: inline-block;
+    display: flex;
+    background-color: #7541f8;
+    background: linear-gradient(to right bottom, #7541f8, #2b0097);
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    margin: auto auto;
 }
 
 
@@ -202,46 +210,45 @@ html, body{
     align-items: left;
     justify-content: left;
     max-width: 300px;
-    height: 245px;
     max-height: 1000px;
     margin-top: 70px; 
     margin-left: 130px;
     padding: 20px;
     border-radius: 16px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background-color: #f8f8f8;
+    box-shadow: 5px 0 10px rgba(6, 3, 77, 0.1);
+    background-color: #0d0b22;
+    /* background: linear-gradient(to right bottom, #080135, #030110); */
+    background: linear-gradient(to right bottom, #080424, #050118);
+    opacity: 95%;
 
 
 }
 
 
 .logo-block > h3{
-    color: #333;
+    color: #7541f8;
     font-family: 'Dancing Script', cursive;
     display: block;
     justify-content: center;
     padding-top: 10px;
     text-align: center;
-    font-size: 2.1rem;
+    font-size: 32px;
     word-spacing: 2px;
-    letter-spacing: .5px;
-    text-shadow: 2px 2px 4px rgba(106, 106, 106, 0.3);
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 4px rgba(91, 8, 207, 0.184);
     text-decoration: none;
     display: inline-block;
 
 }
 
 .logo-block > p{
-    color: #333;
+    color: rgb(248, 248, 248);
     font-family: 'cookie', cursive;
-    display: block;
-    justify-content: left;
-    text-align: center;
-    font-size: 1.7rem;
+    font-size: 27px;
     display: block;
     text-align: center;
     word-wrap: auto;
-    letter-spacing: 1px;
+    letter-spacing: 1.04px;
     max-width: 500px;
     max-height: fit-content;
     margin-top: 20px;
@@ -250,9 +257,9 @@ html, body{
 
 #blocks{
     float: left;
-    /* justify-self: unset; */
     display: flex;
-    margin-right: 20px;
+    width: 100%;
+    margin-left: 45px;
 }
 
 
@@ -296,7 +303,7 @@ html, body{
     display: block;
     justify-content: left;
     text-align: center;
-    font-size: 1.8rem;
+    font-size: 29px;
     text-align: center;
     word-wrap: auto;
     letter-spacing: 1px;
@@ -315,11 +322,12 @@ html, body{
     margin-right: 90px;
 }
 
-/* about me context END*/
+/*About me context END*/
 
 
 
-/*find me on block */
+/*Find me on block */
+
 #find_me_on_block{
     display: block;
 }
@@ -353,6 +361,7 @@ html, body{
     position: relative;
     text-shadow: 2px 2px 4px rgba(106, 106, 106, 0.3);
     text-decoration: none;
+    word-spacing: 2px;
 }
 
 #find_me_icons{
@@ -361,8 +370,6 @@ html, body{
     justify-content: center;
     text-decoration: none;
     position: relative;
-    color: #333;
-    transition: color 0.8s;
     margin-top: 24px;
 
     
@@ -373,29 +380,33 @@ html, body{
     margin: 0 10px;
     text-decoration: none;
     font-size: 28px;
-    background-color: #d38686;
+
 }
 
 #social-icons a:hover{
-    color: #333;
+    color: #7541F8;
     text-decoration: none;
     transition: color .8s;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    text-shadow: 2px 2px 4px rgba(7, 0, 111, 0.529);
     transform: perspective(300px);
     
 }
 
-/*find me on block END */
+/*Find me on block END */
 
 
 
-/*footer block */
+/*Footer block */
 #footer {
-    background-color: #df9595;
+    background-color: #020418;
     padding: 20px;
-    display: block;
-    height: 20px;
-    margin-top: 50px;
+    display: flex;
+    height: 33px;
+    margin-top: 67px;
+    justify-content: space-between;
+    
+    
+    
   }
 
 #created_paragraph{
@@ -406,21 +417,21 @@ html, body{
 
 #created_paragraph > p{
     display: inline;
-    align-items: center;
-    justify-content: center;
-    font-family: 'cookie', cursive;
-    font-size: 1.6rem;
+    font-family: 'Work Sans';
+    font-size: 16px;
     color: #f0f8ff;
-    word-spacing: .5px;
-    letter-spacing: 1px;
+    margin-left: 35px;
+    
 }
 
-#copyright{
-    margin-top: 10px; 
+#copyright > p{
     text-align: center;
-    justify-self: center;
-    display: flex;
-    padding-left: 195px;
+    font-family: 'Work Sans';
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: 400;
+    margin-right: 230px;
+    
 }
 
 
@@ -439,222 +450,54 @@ html, body{
 
 
 #footer-social-icons a:hover{
-    color: #333;
+    color: #7541f8;
     text-decoration: none;
+    transition: color .8s;
+    text-shadow: 2px 2px 4px rgba(105, 0, 192, 0.3);
+    transform: perspective(300px);
+}
+
+.tribhuwan{
+    text-decoration: none;
+    color: #7541f8;
+    font-size: 1.7rem;
+    font-weight: 500;
+    
+}
+
+.tribhuwan:hover{
+    text-decoration: none;
+    color: #ffffff;
     transition: color .8s;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     transform: perspective(300px);
 }
 
-
-
-@media screen and (max-width: 480px) {
-    /* Adjustments for mobile screens */
-/* *{
-    padding: 0px;
-    margin: 0px;
-    
-} */
-
-/* html, body{
-    height: 100%;
-    width: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden;
-    background-color: rgb(246, 168, 168);
-        
-} */
-
-.header{
-    /* padding-bottom: 1660px; */
-    height: 100vh;
-    width: 100vw;
-
-}
-
-
-#background1{
-    background: scroll;
-    background: rgb(246, 168, 168);
-    height: 100vh;
-    width: 100vw;
-    z-index: 100;
-}
-
-#background1 > h1{
-    color: #f0f8ff;
-    font-family: 'Kaushan Script', cursive;
-    display: flex;
-    justify-content: center;
-    padding-top: 165px;
-    text-align: center;
-    font-size: 3rem;
-    text-shadow: 2px 2px 4px rgba(106, 106, 106, 0.3);
-    z-index: 100;
-
-}
-
-#left-heading{
-    color: #f0f8ff;
-    font-family: 'Kaushan Script', cursive;
-    padding-top: 5px;
-    /* padding-left: 50px; */
-    /* text-align: left; */
-    font-size: 2.5rem;
-    word-spacing: 2px;
-    letter-spacing: .5px;
-    text-shadow: 2px 2px 4px rgba(106, 106, 106, 0.3);
+#purple{
     text-decoration: none;
-    /* display: inline-block; */
-    /* position: sticky; */
-    /* top: 0; */
+    color: #7541f8;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+#purple:hover{
+    text-decoration: none;
+    color: #ffffff;
+    transition: color .8s;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    transform: perspective(300px);
+}
+
+/*ALl clear */
+.burger-menu {
+    display: none;
+  }
+  
+  .bar {
+    width: 30px;
+    height: 3px;
     background-color: #333;
-
-}
-
-#left-heading:hover{
-    color: #333;
-    transition: color .8s;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-    transform: perspective(300px);
-
-}
-
-#nav_container{
-    display: block;
-    overflow: hidden;
-    position: sticky;
-    top: 0;
-    background: rgba(217, 134, 134, 0.552);
-    height: 10%;
-    width: auto;
-
-}
-
-#navbar{
-    display: block;
-    float: right;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    padding-top: 5px;
-    padding-right: 10px;
-
-    
-
-}
-
-#bottom-topics{
-    margin-left: -505px;
-}
-
-#bottom-topics li{
-    text-decoration: none;
-    display: flex;
-    /* float: left; */
-    justify-content: center;
-    align-items: center;
-    padding-top: 10px;
-    /* padding-left: 215px; */
-    /* margin-left: 275px; */
-    
-}
-
-#bottom-topics li a{
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    list-style-type: disc;
-    /* padding-left: 40px; */
-    letter-spacing: 1px;
-    font-size: 1.2rem;
-    font-family: 'Dancing Script', cursive;
-    font-weight: 700;
-}
-
-#bottom-topics li a:hover{
-    text-decoration: none;
-    position: relative;
-    color: #333;
-    transition: color 0.8s;
-}
-
-#things_i_love > h2{
-    color: #f0f8ff;
-    font-family: 'Kaushan Script', cursive;
-    display: block;
-    justify-content: center;
-    padding-top: 350px;
-    text-align: center;
-    font-size: 2.8rem;
-    word-spacing: 2px;
-    letter-spacing: .5px;
-    text-shadow: 2px 2px 4px rgba(106, 106, 106, 0.3);
-    text-decoration: none;
-
-}
-
-#frontend_logo{
-    color: #333;
-    font-size: 3.0rem;
-    text-align: center;
-    align-items: center;
-    word-spacing: 2px;
-    letter-spacing: .5px;
-    text-shadow: 2px 2px 4px rgba(106, 106, 106, 0.3);
-    text-decoration: none;
-    display: inline-block;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    margin: 6px 0;
+    transition: 0.4s;
+  }
 
