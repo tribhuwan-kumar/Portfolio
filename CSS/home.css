@@ -15,7 +15,7 @@ html, body{
 }
 
 .header{
-    padding-bottom: 1765px;
+    padding-bottom: 1775px;
     
 
 }
@@ -29,11 +29,10 @@ html, body{
 }
 
 /* Main heading text */
-
 #background1 > h1{
     color: #7541f8;
     font-family: 'Kaushan Script', cursive;
-    display: flex;
+    display: block;
     justify-content: center;
     padding-top: 165px;
     text-align: center;
@@ -48,7 +47,6 @@ html, body{
 
 
 /* Left side heading text */
-
 #left-heading{
     color: #ffffff;
     font-family: 'Kaushan Script', cursive;
@@ -75,8 +73,9 @@ html, body{
 }
 /* Left side heading text END */
 
-/*bottom topics under main header*/
 
+
+/*bottom topics under main header*/
 #bottom-topics{
     display: flex;
     justify-content: center;
@@ -117,12 +116,14 @@ html, body{
 }
 /*bottom topics under main header END */
 
+
+/*nav container*/
 #nav_container{
     display: block;
-    overflow: hidden;
     position: sticky;
     top: 0;
     background: rgba(8, 9, 31, 0.48);
+    backdrop-filter: blur(1px);
     height: 80px;
     width: auto;
     z-index: 100;
@@ -137,8 +138,6 @@ html, body{
     z-index: 100;
     padding-top: 15px;
     padding-right: 50px;
-
-    
 
 }
 
@@ -168,7 +167,6 @@ html, body{
 
 
 /* about me context*/
-
 #things_i_love > h2{
     color: #f0f8ff;
     font-family: 'Kaushan Script', cursive;
@@ -212,12 +210,12 @@ html, body{
     max-width: 300px;
     max-height: 1000px;
     margin-top: 70px; 
-    margin-left: 130px;
+    margin-left: 60px;
+    margin-right: 90px;
     padding: 20px;
     border-radius: 16px;
     box-shadow: 5px 0 10px rgba(6, 3, 77, 0.1);
     background-color: #0d0b22;
-    /* background: linear-gradient(to right bottom, #080135, #030110); */
     background: linear-gradient(to right bottom, #080424, #050118);
     opacity: 95%;
 
@@ -260,13 +258,15 @@ html, body{
     display: flex;
     width: 100%;
     margin-left: 45px;
+    justify-content: space-between;
 }
 
 
 
 #content_me {
     text-align: center;
-  }
+
+}
 
 #content_me > h3{
     color: #f0f8ff;
@@ -285,17 +285,6 @@ html, body{
     
 }
 
-#content_me > h3::before{
-    content: "";
-    position: absolute;
-    bottom: -2px; 
-    left: 0;
-    width: 0;
-    height: 1px; 
-    background-color: #333; 
-    transition: width 0.8s ease;
-  
-}
 
 #content_me > p{
     color: aliceblue;
@@ -321,13 +310,11 @@ html, body{
     margin-top: -530px;
     margin-right: 90px;
 }
-
 /*About me context END*/
 
 
 
 /*Find me on block */
-
 #find_me_on_block{
     display: block;
 }
@@ -391,7 +378,6 @@ html, body{
     transform: perspective(300px);
     
 }
-
 /*Find me on block END */
 
 
@@ -404,7 +390,10 @@ html, body{
     height: 33px;
     margin-top: 67px;
     justify-content: space-between;
-    
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    margin-bottom: -55px;
     
     
   }
@@ -487,17 +476,19 @@ html, body{
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     transform: perspective(300px);
 }
+/*All clear for Desktop */
 
-/*ALl clear */
-.burger-menu {
+
+/*Menu icon*/
+#menu {
     display: none;
-  }
+}
   
-  .bar {
-    width: 30px;
-    height: 3px;
-    background-color: #333;
-    margin: 6px 0;
-    transition: 0.4s;
-  }
+#menu > i {
+    text-align: right;
+    color: #f0f8ff;
+    font-size: 25px;  
+    transition: 0.4s; 
+    
+}
 
