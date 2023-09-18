@@ -78,7 +78,6 @@ html, body{
 /* Left side heading text END */
 
 
-
 /*bottom topics under main header*/
 #bottom-topics{
     display: flex;
@@ -120,10 +119,10 @@ html, body{
 }
 /*bottom topics under main header END */
 
-
 /*nav container*/
 #nav_container{
     display: block;
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
     background: rgba(8, 9, 31, 0.48);
@@ -209,17 +208,13 @@ html, body{
 .logo-block{
     display: flex;
     flex-direction: column;
-    align-items: left;
     justify-content: left;
     max-width: 300px;
     max-height: 1000px;
     margin-top: 70px; 
-    margin-left: 60px;
-    margin-right: 90px;
     padding: 20px;
     border-radius: 16px;
     box-shadow: 5px 0 10px rgba(6, 3, 77, 0.1);
-    background-color: #0d0b22;
     background: linear-gradient(to right bottom, #080424, #050118);
     opacity: 95%;
 
@@ -261,8 +256,7 @@ html, body{
     float: left;
     display: flex;
     width: 100%;
-    margin-left: 45px;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 
@@ -289,8 +283,13 @@ html, body{
     
 }
 
+#introduce_block{
+    display: flex;
+    justify-content:  space-around;
+    margin-left: 60px;
+}
 
-#content_me > p{
+#introduce_block > p{
     color: aliceblue;
     font-family: 'cookie', cursive;
     display: block;
@@ -303,16 +302,14 @@ html, body{
     max-width: 500px;
     max-height: fit-content;
     margin-top: 80px;
-    margin-left: 195px;
+
 } 
 
 
-#content_me > img{
-    display: flex;
-    float: right;
-    flex-direction: column;
-    margin-top: -530px;
-    margin-right: 90px;
+#introduce_block > img{
+    max-width: 650px;
+    height: fit-content;
+    margin-top: 80px;
 }
 /*About me context END*/
 
@@ -410,7 +407,7 @@ html, body{
 
 #created_paragraph > p{
     display: inline;
-    font-family: 'Work Sans';
+    font-family: 'Karla', sans-serif;
     font-size: 16px;
     color: #f0f8ff;
     margin-left: 35px;
@@ -419,7 +416,7 @@ html, body{
 
 #copyright > p{
     text-align: center;
-    font-family: 'Work Sans';
+    font-family: 'Karla', sans-serif;
     color: #ffffff;
     font-size: 17px;
     font-weight: 400;
@@ -469,7 +466,7 @@ html, body{
 #purple{
     text-decoration: none;
     color: #7541f8;
-    font-size: 17px;
+    font-size: 18px;
     font-weight: 500;
 }
 
@@ -481,7 +478,6 @@ html, body{
     transform: perspective(300px);
 }
 /*All clear for Desktop */
-
 
 /*Menu icon*/
 #menu {
@@ -495,4 +491,249 @@ html, body{
     transition: 0.4s; 
     
 }
+
+
+/* Responsive design for mobile devices*/
+@media (max-width: 480px){
+
+    .header {
+        padding-bottom: 2430px;
+
+      }
+
+    #menu {
+        display: block;
+        cursor: pointer;
+        float: right;
+        margin-top: 35px;
+        margin-right: 35px;
+        right: 10px;
+        z-index: 100;
+        position: absolute;
+
+      }
+    
+      #navbar {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+
+      }
+    
+      #navbar.open {
+        display: flex;
+        height: fit-content;
+        position: sticky;
+        z-index: 100;
+        margin-top: 48px;
+        padding-right: 35px;
+        overflow: hidden;
+        box-shadow: 5px 0 10px rgba(6, 3, 77, 0.1);
+        background: linear-gradient(to right bottom, #080424, #050118);
+        opacity: 95%;
+
+      }
+    
+      #navbar.open a {
+        margin: 10px;
+        font-size: 20px;
+        padding: 10px;
+        
+      }
+
+      #nav_container{
+        position: sticky;
+        top: 0;
+
+      }
+
+      #left-heading{
+        font-size: 30px;
+        padding-top: 23px;
+        padding-left: 15px;
+
+      }
+ 
+      #background1 > h1{
+        font-size: 47px;
+        margin-top: 252px;
+        padding-top: 0px;
+
+      }
+      
+      #bottom-topics li a{
+        font-size: 18px;
+        padding-left: 17px; 
+        
+      }
+
+      #student{
+        padding-left: 0px !important; 
+
+      }
+
+      #things_i_love > h2{
+        font-size: 38px;
+        padding-top: 190px;
+
+      }
+
+      #blocks{
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+      }
+
+      .logo-block{
+        margin-left: 0px;
+        margin-right: 0px;
+        max-width: 250px;
+
+      }
+
+      #content_me > h3{
+        font-size: 28px;
+        margin-top: 80px;
+
+      }
+
+      #introduce_block{
+        display: flex;
+        flex-direction: column-reverse;
+        margin-left: 0px !important;
+        align-items: center; 
+
+      }
+
+      #introduce_block > p{
+        max-width: 340px;
+        font-size: 25px;
+        max-height: fit-content;
+        letter-spacing: .8px;
+        margin-top: 55px;
+        word-spacing: 1px;
+
+      }
+
+
+      #introduce_block > img{
+        max-width: 300px;
+        max-height: 300px;
+        margin-top: 45px;
+
+      }
+
+      .tribhuwan{
+        font-size: 24px;
+
+      }
+
+      #find_me_on_block > h4{
+        margin-top: 30px;
+        font-size: 40px;
+
+      }
+
+      #find_me_on_block > p{
+        margin-top: -5px;
+
+      }
+
+      #social-icons a{
+        font-size: 24px;
+
+      }
+
+      #footer{
+        display: inline-block;
+        text-align: center;
+        width: 100vw;
+        height: 80px;
+        padding: 0 !important;
+        margin: 0px !important;
+
+      }
+
+      #created_paragraph > p{
+        font-size: 14px;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+
+      }
+
+      #copyright > p{
+        font-size: 15px;
+        margin: 0px;
+        padding: 0px;
+        margin-top: 10px;
+      }
+
+      #footer-social-icons{
+        margin: 0px;
+        padding: 0px;
+        float: none;
+        margin-top: 10px;
+
+      }
+
+      #footer-social-icons a{
+        margin: 0px 6px;
+        font-size: 19px;
+      }
+
+      #purple{
+        font-size: 15px;
+
+      }
+
+      
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
