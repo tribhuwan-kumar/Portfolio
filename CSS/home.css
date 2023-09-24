@@ -24,13 +24,13 @@ html, body{
 }
 
 .header{
-  padding-bottom: 1775px;
+  padding-bottom: 1850px;
   
 
 }
 
 
-#background1{
+#background{
   background: scroll;
   height: 100vh;
   width: 100vw;
@@ -38,7 +38,7 @@ html, body{
 }
 
 /* Main heading text */
-#background1 > h1{
+#background > h1{
   color: #7541f8;
   font-family: 'Kaushan Script', cursive;
   display: block;
@@ -298,15 +298,14 @@ html, body{
   color: aliceblue;
   font-family: 'cookie', cursive;
   display: block;
-  justify-content: left;
   text-align: center;
   font-size: 29px;
-  text-align: center;
   word-wrap: auto;
   letter-spacing: 1px;
   max-width: 500px;
   max-height: fit-content;
   margin-top: 80px;
+  backdrop-filter: blur(0.11rem);
 
 } 
 
@@ -515,7 +514,7 @@ html, body{
 @media (max-width: 480px){
 
   .header {
-      padding-bottom: 2520px;
+      padding-bottom: 2550px;
 
     }
 
@@ -572,7 +571,7 @@ html, body{
 
     }
 
-    #background1 > h1{
+    #background > h1{
       font-size: 47px;
       margin-top: 252px;
       padding-top: 0px;
@@ -816,21 +815,4 @@ html, body{
       padding: 0;
     }
 
-}
-
-/*Setting for different heights*/
-@media(min-height: 780px) and (max-height: 900px) {
-  #find_me_on_block{
-    padding-top: 40px;
-  
-  }
-  
-
-}
-
-@media(max-height: 730px) {
-  #footer{
-    padding-top: 25px !important;
-    margin-bottom: -115px !important;
-  }
 }
