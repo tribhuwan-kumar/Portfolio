@@ -461,7 +461,7 @@ html, body{
   transform: perspective(300px);
 }
 
-.tribhuwan{
+.slate_blue{
   text-decoration: none;
   color: #7541f8;
   font-size: 1.7rem;
@@ -469,7 +469,7 @@ html, body{
   
 }
 
-.tribhuwan:hover{
+.slate_blue:hover{
   text-decoration: none;
   color: #ffffff;
   transition: color .8s;
@@ -477,14 +477,14 @@ html, body{
   transform: perspective(300px);
 }
 
-#purple{
+#footer_highlight{
   text-decoration: none;
   color: #7541f8;
   font-size: 18px;
   font-weight: 500;
 }
 
-#purple:hover{
+#footer_highlight:hover{
   text-decoration: none;
   color: #ffffff;
   transition: color .8s;
@@ -639,7 +639,7 @@ html, body{
 
     }
 
-    .tribhuwan{
+    .slate_blue{
       font-size: 24px;
       text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 
@@ -701,7 +701,7 @@ html, body{
       font-size: 19px;
     }
 
-    #purple{
+    #footer_highlight{
       font-size: 15px;
       text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 
@@ -749,7 +749,7 @@ html, body{
       font-size: 1.7rem;
     }
 
-    .tribhuwan{
+    .slate_blue{
       font-size: 2.3rem;
     }
 

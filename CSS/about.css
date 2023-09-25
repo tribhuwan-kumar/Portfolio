@@ -120,7 +120,7 @@ html, body{
   }
 /* Left side heading text END */
 
-/*know who i'm block*/
+/*About me block*/
 #content_me {
     text-align: center;
   }
@@ -151,7 +151,7 @@ html, body{
     height: fit-content;
     margin-top: 85px;
   }
-/*know who i'm block end*/
+/*About me block end*/
 
 /*Quote block*/
 #quote{
@@ -314,7 +314,7 @@ html, body{
   }
 /*Footer block end*/
 
-.tribhuwan{
+.slate_blue{
     text-decoration: none;
     color: #7541f8;
     font-weight: 400;
@@ -322,7 +322,7 @@ html, body{
   }
   
 
-.tribhuwan:hover{
+.slate_blue:hover{
     text-decoration: none;
     color: #ffffff;
     transition: color .8s;
@@ -330,21 +330,20 @@ html, body{
     transform: perspective(300px);
   }
 
-#purple {
+  #footer_highlight{
     text-decoration: none;
     color: #7541f8;
     font-size: 18px;
     font-weight: 500;
   }
-
-#purple:hover{
+  
+  #footer_highlight:hover{
     text-decoration: none;
     color: #ffffff;
     transition: color .8s;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     transform: perspective(300px);
   }
-
 
 /*Menu*/
 #menu {
@@ -555,8 +554,14 @@ html, body{
       margin: 0px 6px;
       font-size: 19px;
     }
+    
+    #footer_highlight{
+      font-size: 15px;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 
-    .tribhuwan{
+    }
+  
+    .slate_blue{
       text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 
     }
