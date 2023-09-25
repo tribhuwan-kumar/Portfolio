@@ -42,12 +42,10 @@ html, body{
   color: #7541f8;
   font-family: 'Kaushan Script', cursive;
   display: block;
-  justify-content: center;
   padding-top: 165px;
   text-align: center;
   font-size: 4rem;
   text-shadow: 2px 2px 4px rgba(69, 24, 85, 0.219);
-  z-index: 100;
 
   
 }
@@ -68,9 +66,7 @@ html, body{
   text-shadow: 2px 2px 4px rgba(106, 106, 106, 0.3);
   text-decoration: none;
   display: inline-block;
-  position: sticky;
-  top: 0;
-
+  
 }
 
 #left-heading:hover{
@@ -102,7 +98,6 @@ html, body{
   
 }
 
-
 #bottom-topics li a{
   color: rgb(255, 255, 255);
   text-decoration: none;
@@ -127,7 +122,6 @@ html, body{
 /*Nav container*/
 #nav_container{
   display: block;
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
   background: rgba(8, 9, 31, 0.48);
@@ -141,9 +135,6 @@ html, body{
 #navbar{
   display: block;
   float: right;
-  position: sticky;
-  top: 0;
-  z-index: 100;
   padding-top: 15px;
   padding-right: 50px;
 
@@ -179,7 +170,6 @@ html, body{
   color: #f0f8ff;
   font-family: 'Kaushan Script', cursive;
   display: block;
-  justify-content: center;
   padding-top: 350px;
   text-align: center;
   font-size: 2.8rem;
@@ -201,7 +191,6 @@ html, body{
   text-shadow: 2px 2px 4px rgba(106, 106, 106, 0.3);
   text-decoration: none;
   display: flex;
-  background-color: #7541f8;
   background: linear-gradient(to right bottom, #7541f8, #2b0097);
   border-radius: 50%;
   width: 75px;
@@ -230,8 +219,6 @@ html, body{
 .logo-block > h3{
   color: #7541f8;
   font-family: 'Dancing Script', cursive;
-  display: block;
-  justify-content: center;
   padding-top: 10px;
   text-align: center;
   font-size: 32px;
@@ -275,8 +262,6 @@ html, body{
   color: #f0f8ff;
   font-family: 'Kaushan Script', cursive;
   display: inline-block;
-  justify-content: center;
-  align-items: center;
   margin-top: 200px; 
   text-align: center;
   font-size: 2.8rem;
@@ -416,8 +401,7 @@ html, body{
 
 #created_paragraph{
   display: inline;
-  align-items: center;
-  justify-content: center;
+  
 }
 
 #created_paragraph > p{
@@ -537,8 +521,6 @@ html, body{
     #navbar.open {
       display: flex;
       height: fit-content;
-      position: sticky;
-      z-index: 100;
       margin-top: 48px;
       padding-right: 35px;
       overflow: hidden;
@@ -553,12 +535,6 @@ html, body{
       font-size: 20px;
       padding: 10px;
       
-    }
-
-    #nav_container{
-      position: sticky;
-      top: 0;
-
     }
 
     #left-heading{
