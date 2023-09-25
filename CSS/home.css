@@ -9,7 +9,7 @@
 }
 
 html {
-scroll-behavior: smooth;
+  scroll-behavior: smooth;
 
 }
 
@@ -290,7 +290,6 @@ html, body{
   max-width: 500px;
   max-height: fit-content;
   margin-top: 80px;
-  backdrop-filter: blur(0.11rem);
 
 } 
 
