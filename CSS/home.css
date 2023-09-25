@@ -412,8 +412,6 @@ html, body{
   width: 100%;
   bottom: 0;
   margin-bottom: -55px;
-  
-  
 }
 
 #created_paragraph{
@@ -440,7 +438,6 @@ html, body{
   margin-right: 230px;
   
 }
-
 
 #footer-social-icons{
   display: block;
@@ -511,7 +508,7 @@ html, body{
 
 
 /* Responsive design for mobile devices*/
-@media (max-width: 480px){
+@media (max-width: 768px){
 
   .header {
       padding-bottom: 2550px;
@@ -715,7 +712,7 @@ html, body{
 }
 
 /* Responsive design for tablets*/
-@media only screen and (min-width: 481px) and (max-width: 1024px) {
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
 
    .header {
      padding-bottom: 2975px;
