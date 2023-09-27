@@ -1,0 +1,143 @@
+/*     Made by @tribhuwan-kumar    */
+/*    17th of September 2023       */
+/*        MIT License              */
+
+*{
+    padding: 0px;
+    margin: 0px;
+   
+  }
+  
+html {
+    scroll-behavior: smooth;
+  
+  }
+  
+html, body{
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    background-color: rgb(0, 0, 0);
+    
+  }
+  
+.header{
+    padding-bottom: 100vh;
+    
+  }
+  
+  
+#background{
+    background: scroll;
+    height: 100vh;
+    width: 100vw;
+    z-index: 100;
+
+  }
+
+#background > h3{
+    color: aliceblue;
+    font-family: 'Kaushan Script', cursive;
+    display: block;
+    padding-top: 120px;
+    text-align: center;
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px rgba(69, 24, 85, 0.219);
+
+  }
+
+#background > p{
+    color: aliceblue;
+    font-family: 'Dancing Script', cursive;
+    display: block;
+    text-align: center;
+    font-size: 1.7rem;
+    text-shadow: 2px 2px 4px rgba(69, 24, 85, 0.219);
+
+  }
+
+/* Left side heading text */
+#left-heading{
+    color: #ffffff;
+    font-family: 'Kaushan Script', cursive;
+    padding-top: 15px;
+    padding-left: 50px;
+    text-align: left;
+    font-size: 2.5rem;
+    word-spacing: 2px;
+    letter-spacing: .5px;
+    text-shadow: 2px 2px 4px rgba(106, 106, 106, 0.3);
+    text-decoration: none;
+    display: inline-block;
+    
+  }
+  
+  #left-heading:hover{
+    color: #7541f8;
+    transition: color .8s;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    transform: perspective(300px);
+  
+  }
+  
+/*Nav container*/
+#nav_container{
+    display: block;
+    position: sticky;
+    top: 0;
+    background: rgba(8, 9, 31, 0.48);
+    backdrop-filter: blur(1px);
+    height: 80px;
+    width: auto;
+    z-index: 100;
+  
+  }
+  
+#navbar{
+    display: block;
+    float: right;
+    padding-top: 15px;
+    padding-right: 50px;
+  
+  }
+  
+#navbar a{
+    float: left;
+    display: inline;
+    color: white;
+    text-align: right;
+    padding: 20px 20px;
+    text-decoration: none;
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.6rem;
+    font-weight: bold; 
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 4px rgba(106, 106, 106, 0.3);
+  
+  }
+  
+#navbar a:hover {
+    transition: color .8s;
+    font-weight: bold;
+    color: #7541f8;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    transform: perspective(300px);
+
+  }
+
+/*Menu icon*/
+#menu {
+    display: none;
+  
+  }
+
+#menu > i {
+    text-align: right;
+    color: #f0f8ff;
+    font-size: 25px;  
+    transition: 0.4s; 
+
+  } 
+
