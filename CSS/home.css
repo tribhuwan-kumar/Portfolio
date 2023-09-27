@@ -446,7 +446,6 @@ html, body{
 .slate_blue{
     text-decoration: none;
     color: #7541f8;
-    font-size: 1.7rem;
     font-weight: 500;
   
   }
@@ -696,10 +695,6 @@ html, body{
 
     #left-heading{
       font-size: 2rem;
-
-    }
-
-    #left-heading{
       padding-top: 20px;
       padding-left: 18px;
 
