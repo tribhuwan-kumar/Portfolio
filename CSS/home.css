@@ -54,7 +54,7 @@ html, body{
   font-family: 'Raleway', sans-serif;
   font-size: 1.3rem;
   font-weight: 400;
-  text-shadow: 2px 2px 4px rgba(106, 106, 106, 0.3);
+  text-shadow: 2px 2px 4px rgba(23, 0, 171, 0.3);
 
 }
 
@@ -184,7 +184,6 @@ html, body{
   margin-top: 200px; 
   font-size: 2.4rem;
   font-weight: 600;
-  /* position: relative; */
   text-shadow: 1px 1px 2px rgba(68, 0, 162, 0.37);
   text-decoration: none;
   text-transform: uppercase;
@@ -194,7 +193,7 @@ html, body{
 #introduce_block{
   height: 320px;
   width: 80vw;
-  max-height: 350px;
+  max-height: 500px;
   border-radius: 55px;
   margin-top: 20px;
   opacity: 97%;
@@ -210,7 +209,7 @@ html, body{
 
 #introduce_block > pre{
   color: var(--DarkModeText-color);
-  font-family: 'Source Code Pro', monospace;
+  font-family: 'Fira Code', monospace;
   font-size: 18px;
   word-wrap: auto;
   max-width: 500px;
@@ -225,7 +224,6 @@ html, body{
   margin-top: 200px;
   font-size: 2.4rem;
   font-weight: 600;
-  /* position: relative; */
   text-decoration: none;
   text-transform: uppercase;
   text-shadow: 1px 1px 2px rgba(68, 0, 162, 0.37);
@@ -320,7 +318,7 @@ footer {
   text-decoration: none;
   color: var(--HighLightText-color);
   font-weight: inherit;
-  text-shadow: 1px 1px 2px rgba(68, 0, 162, 0.37);
+  text-shadow: 2px 2px 4px rgba(20, 0, 255, 0.27);
 
 }
 
@@ -419,6 +417,283 @@ footer {
   #find_me_on_block > h4 {
     margin-top: 110px;
     font-size: 2.2rem;
+  }
+
+}
+
+/* Small devices (landscape phones, less than 768px and greater than 576px) */
+@media only screen and (min-width: 576px) and (max-width: 767.98px){
+
+  .menu_icon {
+    top: 33px;
+    right: 50px; 
+    z-index: 1000;
+    cursor: pointer;
+    position: absolute;
+  }
+
+
+  #navbar.open {
+    margin: 0;
+    padding-top: 60px;
+    padding-right: 35px;
+    opacity: 95%;
+    z-index: 100;
+    position: sticky;
+    overflow: hidden;
+    height: fit-content;
+    display: flex !important;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 5px 0 10px rgba(6, 3, 77, 0.1);
+    background: linear-gradient(to right bottom, #080424, #050118);
+
+  }
+
+  #navbar.open a {
+    margin: 10px;
+    font-size: 20px;
+    padding: 10px;
+    margin-bottom: 5px;
+  }
+
+  .container-fluid{
+    padding-bottom: 2900px;
+  } 
+
+  #navbar{
+    margin-right: 15px;
+  }  
+
+  #navbar a{
+    padding: 10px 6px;
+    font-size: 1.2rem;
+  }
+
+  #left_heading {
+    margin-left: 30px;
+    font-size: 2.1rem;
+  }
+
+  #background h1 {
+    font-size: 3.1rem;
+    margin-top: 320px;
+  }
+
+  #bottom_topics li a {
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 18px;
+  }
+
+  #things_i_love{
+    margin-top: 300px;
+  }
+
+  #things_i_love h2{
+    font-size: 2.1rem;
+  }
+
+  .logo_block {
+    margin-top: 30px;
+  }
+
+  #content_me > h3 {
+  margin-top: 150px;
+  font-size: 2.1rem;
+  }
+  
+  #introduce_block > pre {
+    font-size: 15px;
+    margin-left: 20px;
+  }
+
+  #introduce_block{
+    width: 90vw;
+    height: 350px;
+    margin-top: 90px;
+    display: flex !important;
+    justify-content: space-between !important;
+    flex-direction: column-reverse;
+  }
+
+  #introduce_block > img {
+    max-width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #find_me_on_block > h4 {
+    margin-top: 110px;
+    font-size: 2.1rem;
+  }
+
+  footer{
+    display: inline-block !important;
+    text-align: center !important;
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #created_text{
+    text-align: center;
+    margin-left: 0 !important;
+    width: 100vw !important;
+    margin-top: 10px;
+  }
+
+  #copyright_text{
+    text-align: center;
+    margin-left: 0 !important;
+    display: inline-block;
+    width: 100vw !important;
+  }
+
+  #footer-social-icons a{
+    margin: 0 8px;
+  }
+
+}
+
+
+/* Small devices (landscape phones, less than 576px) */
+@media (max-width: 576px){
+
+  .menu_icon {
+    top: 36px;
+    right: 28px;
+    z-index: 1000;
+    cursor: pointer;
+    position: absolute;
+
+  }
+
+  #navbar.open {
+    margin: 0;
+    padding-top: 60px;
+    padding-right: 35px;
+    opacity: 95%;
+    z-index: 100;
+    position: sticky;
+    overflow: hidden;
+    height: fit-content;
+    display: flex !important;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 5px 0 10px rgba(6, 3, 77, 0.1);
+    background: linear-gradient(to right bottom, #080424, #050118);
+
+  }
+
+  #navbar.open a {
+    margin: 10px;
+    font-size: 20px;
+    padding: 10px;
+    margin-bottom: 5px;
+    margin-top: 5px; 
+  }
+
+  .container-fluid {
+    padding-bottom: 3125px;
+  }
+
+  #left_heading{
+    margin-top: 28px;
+    margin-left: 18px;
+    font-size: 1.8rem;
+  }
+
+  #background h1{
+    margin-top: 280px;
+    font-size: 37px;
+  }
+
+  #bottom_topics li a {
+    padding-left: 4px;
+    padding-right: 1px;
+    font-weight: 400;
+    font-size: 16px;
+  }
+
+  #things_i_love {
+    margin-top: 300px;
+  }
+  
+  #things_i_love > h2 {
+    font-size: 32px;
+  }
+
+  .logo_block {
+    max-width: 80vw;
+    margin-top: 30px;
+  }
+
+  #content_me > h3{
+    font-size: 32px;
+    margin-top: 150px;
+  }
+
+  #introduce_block {
+    width: 90vw;
+    height: 450px;
+    margin-top: 90px;
+    display: flex !important;
+    justify-content: space-between !important;
+    flex-direction: column-reverse;
+    border-radius: 40px;
+  }
+
+  #introduce_block > pre {
+    font-size: 14px;
+    margin-left: 15px;
+    line-height: 1.8rem;
+    overflow-x: scroll !important;
+  }
+
+  #introduce_block > img {
+    max-width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #find_me_on_block > h4 {
+    margin-top: 125px;
+    font-size: 35px;
+  }
+
+  footer{
+    display: inline-block !important;
+    text-align: center !important;
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #created_text{
+    text-align: center;
+    margin-left: 0 !important;
+    width: 100vw !important;
+    margin-top: 10px;
+    font-size: 16px;
+  }
+
+  #copyright_text{
+    text-align: center;
+    margin-left: 0 !important;
+    display: inline-block;
+    width: 100vw !important;
+    font-size: 16px;
+  }
+
+  #footer-social-icons{
+    width: 100vw !important;
+  }
+
+  #footer-social-icons a{
+    margin: 0 8px;
   }
 
 }
