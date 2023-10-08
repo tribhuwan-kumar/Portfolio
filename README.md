@@ -1,8 +1,8 @@
-## Portfolio web
+## Portfolio web for Programmers
 ### Made in pure CSS &amp; HTML
 
-![image](https://github.com/tribhuwan-kumar/Portfolio/assets/118052427/db9ba3ce-00b3-44b1-a6f1-c776f28fbd21)
+![image](https://github.com/tribhuwan-kumar/Portfolio/assets/118052427/38ebded4-4bdb-4e2f-8921-84b293b53017)
 
 ## [Live preview](https://tribhuwan-kumar.github.io/)
 If you find any issue feel free to create issue 😊 <br>
-sorry for using 0.6% of javascript 😅
+sorry for using 0.7% of javascript 😅
