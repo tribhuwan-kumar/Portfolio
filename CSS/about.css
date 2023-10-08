@@ -82,7 +82,7 @@ html, body{
 
 #background h1{
   font-weight: 600;
-  margin-top: 250px;
+  margin-top: 160px;
   font-size: 2.8rem;
   font-family: 'Raleway', sans-serif;
   color: var(--DarkModeText-color);
@@ -93,7 +93,7 @@ html, body{
 
 
 #introduce_block{
-  margin-top: 100px;
+  margin-top: 50px;
 
 }
 
@@ -134,7 +134,7 @@ html, body{
 }
 
 #tech_stack{
-  margin-top: 100px;
+  margin-top: 160px;
   font-size: 2.5rem;
   font-weight: 600;
   font-family: 'Raleway', sans-serif;
@@ -267,7 +267,7 @@ footer {
 @media only screen and (min-width: 768px) and (max-width: 1049px) {
 
   .container-fluid {
-    padding-bottom: 2800px !important;
+    padding-bottom: 3000px !important;
   } 
 
   #navbar {
@@ -313,6 +313,7 @@ footer {
 
   #tech_stack{
     font-size: 2.1rem;
+    margin-top: 102px;
   }
 
   .icons_container a{
