@@ -10,7 +10,7 @@ Thank you for considering contributing to my portfolio website! Your help is gre
 - Clone the forked repository to your local machine:
 
     ```bash
-    git clone https://github.com/<your-github-username>/Portfolio.git
+    git clone https://github.com/tribhuwan-kumar/Portfolio.git
     ```
 <hr>
 
@@ -56,4 +56,4 @@ Please note that this project follows a [Code of Conduct](CODE_OF_CONDUCT.md). B
 
 By contributing to this project, you agree that your contributions will be licensed under the project's [License](LICENSE.md).
 
-Thank you for your contributions, and happy coding!!
+Thank you for your contributions, and happy coding!! 😊
